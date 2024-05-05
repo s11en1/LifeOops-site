@@ -176,6 +176,8 @@ textarea {
 	padding: 20px 50px;
 }
 
+.main__form-inputs textarea { padding-bottom: 50px; }
+
 .main__small-inputs-container {
 	display: flex;
 	justify-content: space-between;
@@ -253,7 +255,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
 
 .main__form-buttons-group {
 	width: 100%;
-	max-width: 760px;
+	max-width: 764px;
 
 	display: flex;
 	align-self: center;
@@ -261,3 +263,56 @@ input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
 
 	margin-top: 50px;
 }
+
+.main__custom-select-wrapper {
+	display: flex;
+	align-items: center;
+
+	background-color: #D9D9D9;
+
+	padding: 20px 0 20px 50px;
+}
+
+.main__custom-select-text {
+	font-family: "SeoulHangang-CM";
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.main__custom-select-icon { margin-right: 12px; }
+
+.main__custom-select-wrapper {
+	position: relative;
+}
+
+.main__custom-select-input:checked + 
+.main__custom-select-wrapper .main__custom-select-icon 
+{ transform: rotate(180deg); }
+
+.main__custom-select-options-wrapper {
+	position: absolute;
+	display: none;
+
+	left: 0;
+	right: 0;
+	top: 100%;
+
+	background-color: #D9D9D9;
+}
+
+.main__custom-select-input:checked +
+.main__custom-select-wrapper .main__custom-select-options-wrapper 
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.main__custom-option-text {
+	font-family: "SeoulHangang-CM";
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.main__custom-option-wrapper { padding: 20px 0 20px 50px; }
+
+.main__custom-option-wrapper:hover { background-color: #b1b1b1; }
