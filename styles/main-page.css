@@ -1,0 +1,228 @@
+/* ================ Portfolio section ============================ */
+
+.main__portfolio-section {
+    background-image: url("../media/portfolio-section-bg.png");
+    background-repeat: no-repeat;
+    background-size: 67% 95%;
+    background-position: right;
+	
+    display: flex;
+    align-items: end;
+	
+    height: 640px;
+    
+	margin-bottom: 100px;
+}
+
+.main__feedback-container {
+    background-color: rgba(255, 255, 255, 1);
+	
+    width: 100%;
+    max-width: 680px;
+	
+    padding: 30px 0 15px 0;
+    margin-right: 20px;
+}
+
+.main__feedback-header {
+    font-family: "SeoulHangang-CBL";
+    font-size: 54px;
+    font-weight: 400;
+	
+	margin-bottom: 27px;
+}
+
+.main__feedback-header-accent { color: rgba(75, 140, 187, 1); }
+
+.main__feedback-text {
+    font-family: "SeoulHangang-CBL";
+    font-size: 24px;
+    font-weight: 400;
+    
+	margin-bottom: 27px;
+}
+
+.main__feedback-form-button {
+    font-family: "SeoulHangang-CBL";
+    font-size: 36px;
+    font-weight: 400;
+	letter-spacing: 10px;
+	
+	background-color: rgba(75, 140, 187, 1);
+	
+	display: inline-block;
+	padding: 25px 30px;
+	margin-bottom: 10px;
+}
+
+.main__statistic-container {
+    background-color: rgba(75, 140, 187, 1);
+	
+	width: 100%;
+	max-width: 700px;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	padding: 12px 0;
+}
+
+.main__statistic-text {
+    font-family: "SeoulHangang-B";
+	font-size: 24px;
+	text-align: center;
+}
+
+.main__statistic-text-accent {
+    font-size: 96px;
+}
+
+/* ================ About section ============================ */
+
+.main__about-section { margin-bottom: 100px; }
+
+.main__about-section-header {
+    font-family: "SeoulHangang-CBL";
+    font-size: 36px;
+    font-weight: 400;
+    
+    display: inline-block;
+    
+    background-color: rgba(75, 140, 187, 1);
+    
+    padding: 9px 11px 9px 23px;
+}
+
+.main__about-list-element {
+    margin-top: 70px;
+    
+    display: flex;
+    align-items: start;
+}
+
+.main__about-list-element-marker { margin-right: 25px; }
+
+.main__about-list-element-text {
+    font-family: "SeoulHangang-CM";
+    font-size: 32px;
+}
+
+/* ================ Services section ============================ */
+
+.main__services-section { margin-bottom: 175px; }
+
+.main__services-section-header {
+    font-family: "SeoulHangang-CBL";
+    font-size: 36px;
+    font-weight: 400;
+    
+    display: inline-block;
+    
+    background-color: rgba(75, 140, 187, 1);
+    
+    padding: 8px 23px;
+}
+
+.main__services-section-text {
+    font-family: "SeoulHangang-CM";
+    font-weight: 400;
+    font-size: 32px;
+    
+    margin: 70px 0 55px 0;
+}
+
+.main__services-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    height: 300px;
+}
+
+.main__services-list-element {
+    margin-bottom: 50px;
+    
+    display: flex;
+    align-items: start;
+}
+
+.main__services-list-element-marker {
+    margin-right: 20px;
+}
+
+.main__services-list-element-text {
+    font-family: "SeoulHangang-CM";
+    font-weight: 400;
+    font-size: 26px;
+}
+
+/* ================ Feedback form ============================ */
+
+.main__feedback-form { margin-bottom: 90px; }
+
+.main__feedback-form-header-container {
+    background-color: rgba(75, 140, 187, 1);
+    
+    padding: 25px 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__feedback-form-header {
+    font-family: "SeoulHangang-B";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.main__feedback-form-inputs-container {
+    padding: 50px;
+    
+    background-color: rgba(217, 217, 217, 0.31);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.main__feedback-form-inputs-container > * { margin-bottom: 50px; }
+
+.main__feedback-form-input {
+    background-color: rgba(217, 217, 217, 1);
+    
+    font-family: "SeoulHangang-B";
+    font-weight: 400;
+    font-size: 24px;
+    
+    padding: 20px 0 20px 50px;
+    
+    border: none;
+}
+
+.main__feedback-form-input--textarea { resize: none; }
+
+.main__feedback-form-input--small { width: 40%; }
+
+.main__feedback-form-inputs-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__feedback-form-buttons-group {
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-bottom: 0;
+}
+
+.main__feedback-form-input-button {
+    font-family: "SeoulHangang-CBL";
+    font-size: 32px;
+    font-weight: 400;
+    
+    background-color: rgba(75, 140, 187, 1);
+    border: none;
+    
+    padding: 15px 95px;
+}

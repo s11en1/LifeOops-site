@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../fonts.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../styles/hiring-employees.css" />
+
+		<link rel="shortcut icon" href="../media/min-logo.svg" />
+
+		<title>LifeOops - наём сотрудников</title>
+	</head>
+	<body>
+        <header>
+            <div class="header__contacts-container-background">
+                <div class="header__contacts-container g-page-container">
+                    <div class="header__working-hours">
+                        <img src="../media/watch-icon.svg" alt="Иконка часов" class="header__watch-icon">
+                        <p class="header__working-hours-text">Мы работаем: Пн - Пт 8:00 - 18:00</p>
+                    </div>
+                    <nav>
+                        <a href="#" class="header__contacts-link">Facebook</a>
+                        <a href="#" class="header__contacts-link">Instagram</a>
+                        <a href="#" class="header__contacts-link">Telegram</a>
+                        <a href="#" class="header__contacts-link">VK</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__nav-container g-page-container">
+                <a href="index.html"><img src="../media/logo.svg" alt="Логотип сайта"></a>
+                <nav class="header__nav-list">
+                    <a href="#" class="header__nav-link">УСЛУГИ</a>
+                    <a href="#" class="header__nav-link">БЛОГ</a>
+                    <a href="#" class="header__nav-link">О НАС</a>
+                    <a href="#" class="header__nav-link">КОНТАКТЫ</a>
+                    <a href="#" class="header__nav-link">СОТРУДНИКАМ</a>
+                </nav>
+                <form action="#" method="get" class="header__search-form">
+                    <button type="submit" class="header__search-submit-button">
+                        <img src="../media/search-icon.svg" alt="Иконка лупы">
+                    </button>
+                    <input type="text" name="q" value="Дизайн для текста" class="header__search-input">
+                </form>
+                <a href="#job-form" class="header__feedback-form-button">ОТКЛИКНУТЬСЯ</a>
+            </div>
+        </header>
+        <main>
+            <section class="main__hiring-section g-page-container">
+                <div class="main__hiring-section-block">
+                    <h1 class="main__hiring-section-header">Попробуйте свои силы с нами!</h1>
+                    <p class="main__hiring-section-text">Помогайте нам в помощи другим! =)</p>
+                    <a href="#job-form" class="main__hiring-job-form-link">Подать заявку</a>
+                </div>
+            </section>
+            <section class="main__vacancies-section g-page-container">
+                <h2 class="main__vacancies-section-header">Актуальные вакансии</h2>
+                <div class="main__lists-block">
+                    <div class="main__list-block">
+                        <p class="main__list-legend">Требования к персоналу</p>
+                        <ul class="main__list">
+                            <li class="main__requirements-list-element">Усидчивость</li>
+                            <li class="main__requirements-list-element">Знания языков программирования</li>
+                            <li class="main__requirements-list-element">Знания алгоритмов</li>
+                            <li class="main__requirements-list-element">Знания в математике</li>
+                            <li class="main__requirements-list-element">Soft skills</li>
+                        </ul>
+                    </div> 
+                    <div class="main__list-block">
+                        <p class="main__list-legend">Требования к образованию</p>
+                        <ul class="main__list main__list--education">
+                            <li class="main__education-list-element">(09.02.07) Информационные системы и програмирование</li>
+                            <li class="main__education-list-element">(10.02.05) Обеспечение информационной безопасности</li>
+                            <li class="main__education-list-element">(54.01.20) Графический дизайн</li>
+                        </ul>
+                    </div>    
+                </div>
+            </section>
+            <form action="#" method="POST" id="job-form" class="g-page-container">
+                <div class="main__form-header-block">
+                    <p class="main__form-header-text">Форма заявок на работу</p>
+                </div>
+                <div class="main__form-inputs">
+                    <input type="text" name="name" id="name" placeholder="ФИО" required class="main__name-input">
+                    <div class="main__form-inputs-group">
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email" required class="main__email-input">
+                            <textarea name="about" id="about" cols="30" rows="10" placeholder="Немного о себе" required></textarea>
+                        </div>
+                        <div>
+                            <input type="tel" pattern="\d*" maxlength="10" name="phone" id="phone" placeholder="Телефон" required class="main__phone-input">
+                            <div class="main__small-inputs-container">
+                                <div class="main__small-input">
+                                    <img src="../media/calendar-icon.svg" alt="Иконка календаря" class="main__input-image">
+                                    <input type="date" name="date" id="date" placeholder="Дата рождения" required class="main__custom-input">
+                                </div>
+                                <div class="main__small-input">
+                                    <img src="../media/location-icon.svg" alt="Иконка локации" class="main__input-image">
+                                    <input type="text" name="city" id="city" placeholder="Город проживания" required class="main__custom-input">
+                                </div>
+                            </div>
+                            <div class="main__small-inputs-container">
+                                <label for="summary" class="main__custom-input-container">
+                                    <input type="file" name="summary" id="summary" required hidden>
+                                    <img src="../media/file-icon.svg" alt="Иконка файла" class="main__input-image">
+                                    <p class="main__custom-input-text">Резюме</p>
+                                </label>
+                                <label for="photo" class="main__custom-input-container">
+                                    <input type="file" name="photo" id="photo" required hidden>
+                                    <img src="../media/file-icon.svg" alt="Иконка файла" class="main__input-image">
+                                    <p class="main__custom-input-text">Ваше фото</p>
+                                </label>
+                            </div>
+                            <!-- <input type="checkbox" name="job-list" id="job-list"> -->
+                        </div>
+                    </div>
+                    <div class="main__form-buttons-group">
+                        <button type="submit" class="main__form-button">Отправить</button>
+                        <button type="reset" class="main__form-button">Сбросить</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer__container g-page-container">
+                <a href="tel:89997776688" class="footer__tel-link">Если у вас остались вопросы, звоните на: +7-(999)-777-66-88</a>
+                <nav class="footer__socials-nav">
+                    <a href="#"><img src="../media/vk-icon.png" alt="Иконка соцсети"></a>
+                    <a href="#"><img src="../media/telegram-icon.png" alt="Иконка соцсети"></a>
+                    <a href="#"><img src="../media/instagram-icon.png" alt="Иконка соцсети"></a>
+                    <a href="#"><img src="..//media/facebook-icon.png" alt="Иконка соцсети"></a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

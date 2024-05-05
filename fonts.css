@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+	font-family: "SeoulHangang-CM";
+	src: url("fonts/SeoulHangang/SeoulHangangCM.ttf");
+}
+
+@font-face {
+	font-family: "SeoulHangang-B";
+	src: url("fonts/SeoulHangang/SeoulHangangB.ttf");
+}
+
+@font-face {
+	font-family: "SeoulHangang-EB";
+	src: url("fonts/SeoulHangang/SeoulHangangEB.ttf");
+}
+
+@font-face {
+	font-family: "SeoulHangang-CBL";
+	src: url("fonts/SeoulHangang/SeoulHangangCBL.ttf");
+}

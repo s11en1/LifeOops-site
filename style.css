@@ -1,0 +1,144 @@
+/* ================ Generic ============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li { list-style: none; }
+
+a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+header { margin-bottom: 50px; }
+
+/* ================ Global ============================ */
+
+.g-page-container { 
+    max-width: 1420px;
+    margin: auto; 
+}
+
+/* ================ Header contacts ============================ */
+
+.header__contacts-container-background { background-color: rgba(75, 140, 187, 1); }
+
+.header__contacts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 16px 0;
+    margin-bottom: 35px;
+}
+
+.header__working-hours {
+    display: flex;
+    align-items: center;
+}
+
+.header__working-hours-text {
+    font-family: "SeoulHangang-B";
+    font-size: 14px;
+}
+
+.header__watch-icon {
+    width: 18px;
+    height: 18px;
+    
+    margin-right: 5px;
+}
+
+.header__contacts-link {
+    font-family: "SeoulHangang-B";
+    font-size: 14px;
+    
+    margin-left: 72px;
+}
+
+/* ================ Header nav ============================ */
+
+.header__nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    flex-grow: 1;
+}
+
+.header__nav-link {
+    font-family: "SeoulHangang-B";
+    font-size: 16px;
+    
+    border-bottom: 3px solid transparent;
+}
+
+.header__nav-link:hover { border-bottom: 3px solid rgba(75, 140, 187, 1); }
+
+.header__search-form { 
+    display: flex;
+    margin-right: 15px;
+}
+
+.header__search-submit-button {
+    background-color: rgba(75, 140, 187, 1);
+    
+    width: 40px;
+    height: 40px;
+    
+    border: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__search-input {
+    font-family: "SeoulHangang-CM";
+    font-size: 20px;
+    font-weight: 600;
+    
+    box-sizing: border-box;
+    border: 1px solid rgba(75, 140, 187, 1);
+    
+    padding-left: 18px;
+}
+
+.header__feedback-form-button {
+    background-color: rgba(75, 140, 187, 1);
+    
+    font-family: "SeoulHangang-CBL";
+    font-size: 20px;
+	letter-spacing: 5px;
+
+    padding: 10px 25px;
+}
+
+/* ================ Footer ============================ */
+
+footer { background-color: rgba(75, 140, 187, 1); }
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 0;
+}
+
+.footer__tel-link {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.footer__socials-nav { display: flex; }
