@@ -29,13 +29,13 @@
                 </div>
             </div>
             <div class="header__nav-container g-page-container">
-                <a href="index.html"><img src="../media/logo.svg" alt="Логотип сайта"></a>
+                <a href="../index.html"><img src="../media/logo.svg" alt="Логотип сайта"></a>
                 <nav class="header__nav-list">
                     <a href="#" class="header__nav-link">УСЛУГИ</a>
                     <a href="#" class="header__nav-link">БЛОГ</a>
                     <a href="#" class="header__nav-link">О НАС</a>
-                    <a href="#" class="header__nav-link">КОНТАКТЫ</a>
-                    <a href="#" class="header__nav-link">СОТРУДНИКАМ</a>
+                    <a href="contacts.html" class="header__nav-link">КОНТАКТЫ</a>
+                    <a href="hiring-employees.html" class="header__nav-link">СОТРУДНИКАМ</a>
                 </nav>
                 <form action="#" method="get" class="header__search-form">
                     <button type="submit" class="header__search-submit-button">
@@ -112,7 +112,27 @@
                                     <p class="main__custom-input-text">Ваше фото</p>
                                 </label>
                             </div>
-                            <!-- <input type="checkbox" name="job-list" id="job-list"> -->
+                            <label for="job-list">
+                                <input type="checkbox" name="job-list" id="job-list" class="main__custom-select-input" hidden>
+                                <div class="main__custom-select-wrapper">
+                                    <img src="../media/down-arrow.svg" alt="Иконка стрелочки" class="main__custom-select-icon">
+                                    <p class="main__custom-select-text">Должность</p>
+                                    <div class="main__custom-select-options-wrapper">
+                                        <label for="qa-engineer" class="main__custom-option-wrapper">
+                                            <input type="radio" name="job-title" value="qa-engineer" id="qa-engineer" class="main__job-radio" hidden>
+                                            <p class="main__custom-option-text">Инженер по тестированию</p>
+                                        </label>
+                                        <label for="data-analyst" class="main__custom-option-wrapper">
+                                            <input type="radio" name="job-title" value="data-analyst" id="data-analyst" class="main__job-radio" hidden>
+                                            <p class="main__custom-option-text">Специалист по анализу данных</p>
+                                        </label>
+                                        <label for="quality-manager" class="main__custom-option-wrapper">
+                                            <input type="radio" name="job-title" value="quality-manager" id="quality-manager" class="main__job-radio" hidden>
+                                            <p class="main__custom-option-text">Менеджер по качеству</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </label>
                         </div>
                     </div>
                     <div class="main__form-buttons-group">
@@ -133,5 +153,7 @@
                 </nav>
             </div>
         </footer>
+
+        <script src="../scripts/job_form_custom_select_script.js"></script>
     </body>
 </html>
