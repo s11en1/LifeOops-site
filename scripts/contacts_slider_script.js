@@ -5,12 +5,13 @@ let sliderButtons = document.querySelectorAll('.main__slider-button');
 
 let visibleClass = 'visible';
 let slideIndex = 0;
+let interval;
 
 function initSlider()
 {
     initSliderButtons();
     showSlide(slideIndex);
-    let interval = setInterval(nextSlide, 5000);
+    interval = setInterval(nextSlide, 5000);
 }
 
 function initSliderButtons()
@@ -37,6 +38,9 @@ function showSlide()
     });
 
     slides[slideIndex].classList.add(visibleClass);
+
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 5000);
 }
 
 function nextSlide()

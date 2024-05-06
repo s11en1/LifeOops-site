@@ -40,6 +40,8 @@
     margin-bottom: 30px;
 }
 
+.main__slider-button:hover { transform: scale(1.2); }
+
 .main__feedback-form { margin-bottom: 50px; }
 
 .main__form-header-wrapper {
