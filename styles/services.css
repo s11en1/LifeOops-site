@@ -51,3 +51,69 @@
 }
 
 .main__services-list .main__services-element:last-child { margin-bottom: 0; }
+
+.main__info-section { margin-bottom: 100px; }
+
+.main__info-buttons-group {
+    width: 100%;
+    max-width: 1140px;
+
+    margin: 0 auto 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__info-button {
+    background-color: #4B8CBB;
+
+    width: 100%;
+    max-width: 340px;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+    font-family: "SeoulHangang-CBL";
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.main__info-button--active,
+.main__info-button:hover 
+{ background-color: #5aa7de; }
+
+.main__info-list-element {
+    display: flex;
+    align-items: flex-start;
+
+    margin-bottom: 80px;
+}
+
+.main__info-element-icon { margin-right: 30px; }
+
+.main__info-element-header {
+    font-family: "SeoulHangang-CBL";
+    font-weight: 400;
+    font-size: 32px;
+
+    width: 100%;
+    max-width: 190px;
+
+    white-space: nowrap;
+}
+
+.main__info-element-text {
+    font-family: "SeoulHangang-CBL";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main__info-block-bg { 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.main__info-block { display: none; }
+
+.main__info-block--visible { display: block; }
