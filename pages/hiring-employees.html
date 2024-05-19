@@ -78,66 +78,73 @@
                 </div>
             </section>
             <form action="#" method="POST" id="job-form" class="g-page-container">
-                <div class="main__form-header-block">
-                    <p class="main__form-header-text">Форма заявок на работу</p>
+                <div class="main__job-form-header-wrapper">
+                    <p class="main__job-form-header-text">Форма заявок на работу</p>
                 </div>
-                <div class="main__form-inputs">
-                    <input type="text" name="name" id="name" placeholder="ФИО" required class="main__name-input">
-                    <div class="main__form-inputs-group">
-                        <div>
-                            <input type="email" name="email" id="email" placeholder="Email" required class="main__email-input">
-                            <textarea name="about" id="about" cols="30" rows="10" placeholder="Немного о себе" required></textarea>
+                <div class="main__job-form-inputs-wrapper">
+                    <input type="text" name="fullname" placeholder="ФИО" required class="main__job-form-input">
+                    <div class="main__job-form-inputs-container">
+                        <div class="main__job-form-inputs-group">
+                            <input type="email" name="email" placeholder="Email" required class="main__job-form-input">
+                            <textarea name="about-user" cols="30" rows="10" placeholder="Коротко о себе" required class="main__job-form-input"></textarea>
                         </div>
-                        <div>
-                            <input type="tel" pattern="\d*" maxlength="10" name="phone" id="phone" placeholder="Телефон" required class="main__phone-input">
-                            <div class="main__small-inputs-container">
-                                <div class="main__small-input">
-                                    <img src="../media/calendar-icon.svg" alt="Иконка календаря" class="main__input-image">
-                                    <input type="date" name="date" id="date" placeholder="Дата рождения" required class="main__custom-input">
-                                </div>
-                                <div class="main__small-input">
-                                    <img src="../media/location-icon.svg" alt="Иконка локации" class="main__input-image">
-                                    <input type="text" name="city" id="city" placeholder="Город проживания" required class="main__custom-input">
-                                </div>
-                            </div>
-                            <div class="main__small-inputs-container">
-                                <label for="summary" class="main__custom-input-container">
-                                    <input type="file" name="summary" id="summary" required hidden>
-                                    <img src="../media/file-icon.svg" alt="Иконка файла" class="main__input-image">
-                                    <p class="main__custom-input-text">Резюме</p>
+                        <div class="main__job-form-inputs-group">
+                            <input type="tel" name="phone" pattern="^7\d{10}" placeholder="Телефон" required class="main__job-form-input">
+                            <div class="main__job-form-custom-inputs-group">
+                                <label for="birth-date" class="main__job-form-custom-input-wrapper">
+                                    <p class="main__job-form-error-message" id="date-error-message">Введите дату в формате: YYYY-MM-DD</p>
+                                    <img src="../media/calendar-icon.svg" alt="Иконка календаря">
+                                    <input type="text" name="birth-date" id="birth-date" placeholder="Дата рождения" required class="main__job-form-custom-input">
                                 </label>
-                                <label for="photo" class="main__custom-input-container">
-                                    <input type="file" name="photo" id="photo" required hidden>
-                                    <img src="../media/file-icon.svg" alt="Иконка файла" class="main__input-image">
-                                    <p class="main__custom-input-text">Ваше фото</p>
+                                <label for="user-city" class="main__job-form-custom-input-wrapper">
+                                    <img src="../media/location-icon.svg" alt="Иконка локации">
+                                    <input type="text" name="user-city" id="user-city" placeholder="Город проживания" required class="main__job-form-custom-input">
                                 </label>
                             </div>
-                            <label for="job-list">
-                                <input type="checkbox" name="job-list" id="job-list" class="main__custom-select-input" hidden>
-                                <div class="main__custom-select-wrapper">
-                                    <img src="../media/down-arrow.svg" alt="Иконка стрелочки" class="main__custom-select-icon">
-                                    <p class="main__custom-select-text">Должность</p>
-                                    <div class="main__custom-select-options-wrapper">
-                                        <label for="qa-engineer" class="main__custom-option-wrapper">
-                                            <input type="radio" name="job-title" value="qa-engineer" id="qa-engineer" class="main__job-radio" hidden>
-                                            <p class="main__custom-option-text">Инженер по тестированию</p>
-                                        </label>
-                                        <label for="data-analyst" class="main__custom-option-wrapper">
-                                            <input type="radio" name="job-title" value="data-analyst" id="data-analyst" class="main__job-radio" hidden>
-                                            <p class="main__custom-option-text">Специалист по анализу данных</p>
-                                        </label>
-                                        <label for="quality-manager" class="main__custom-option-wrapper">
-                                            <input type="radio" name="job-title" value="quality-manager" id="quality-manager" class="main__job-radio" hidden>
-                                            <p class="main__custom-option-text">Менеджер по качеству</p>
-                                        </label>
-                                    </div>
+                            <div class="main__job-form-custom-inputs-group">
+                                <label for="user-resume" class="main__job-form-custom-input-wrapper">
+                                    <input type="file" name="user-resume" id="user-resume" required hidden>
+                                    <img src="../media/file-icon.svg" alt="Иконка файла">
+                                    <p class="main__job-form-custom-input-text main__job-form-custom-file-input-text" id="resume-input-text">Резюме</p>
+                                </label>
+                                <label for="user-photo" class="main__job-form-custom-input-wrapper">
+                                    <input type="file" name="user-photo" id="user-photo" required hidden>
+                                    <img src="../media/file-icon.svg" alt="Иконка файла">
+                                    <p class="main__job-form-custom-input-text main__job-form-custom-file-input-text" id="photo-input-text">Ваше фото</p>
+                                </label>
+                            </div>
+                            <label for="show-job-list" class="main__job-form-custom-input-wrapper main__job-form-custom-input-wrapper--select">
+                                <img src="../media/down-arrow.svg" alt="Иконка стрелочки" class="main__job-form-custom-select-marker">
+                                <p class="main__job-form-custom-input-text">Должность</p>
+                                <input type="checkbox" id="show-job-list" hidden class="main__job-form-custom-select">
+                                <div class="main__job-form-custom-options">
+                                    <label for="system-programmer" class="main__job-form-custom-option">
+                                        <input type="radio" name="job-title" id="system-programmer" value="system-programmer" hidden>
+                                        <p class="main__custom-option-text">Системный программист</p>
+                                    </label>
+                                    <label for="web-programmer" class="main__job-form-custom-option">
+                                        <input type="radio" name="job-title" id="web-programmer" value="web-programmer" hidden>
+                                        <p class="main__custom-option-text">Веб-программист</p>
+                                    </label>
+                                    <label for="backend-developer" class="main__job-form-custom-option">
+                                        <input type="radio" name="job-title" id="backend-developer" value="backend-developer" hidden>
+                                        <p class="main__custom-option-text">Backend разработчик</p>
+                                    </label>
+                                    <label for="tester" class="main__job-form-custom-option">
+                                        <input type="radio" name="job-title" id="tester" value="tester" hidden>
+                                        <p class="main__custom-option-text">Тестировщик ПО</p>
+                                    </label>
+                                    <label for="graphic-designer" class="main__job-form-custom-option">
+                                        <input type="radio" name="job-title" id="graphic-designer" value="graphic-designer" hidden>
+                                        <p class="main__custom-option-text">Графический дизайнер</p>
+                                    </label>
                                 </div>
                             </label>
                         </div>
                     </div>
-                    <div class="main__form-buttons-group">
-                        <button type="submit" class="main__form-button">Отправить</button>
-                        <button type="reset" class="main__form-button">Сбросить</button>
+                    <div class="main__job-form-buttons-group">
+                        <button type="submit">Отправить</button>
+                        <button type="reset">Сбросить</button>
                     </div>
                 </div>
             </form>
@@ -153,7 +160,6 @@
                 </nav>
             </div>
         </footer>
-
-        <script src="../scripts/job_form_custom_select_script.js"></script>
+        <script src="../scripts/hirig_employees_script.js"></script>
     </body>
 </html>
