@@ -126,193 +126,171 @@ textarea {
 
 /* ========================= Job form ============================ */
 
-.main__form-header-block {
-	background-color: #4b8cbb;
+#job-form { margin-bottom: 100px; }
 
-	padding: 24px 0;
+.main__job-form-header-wrapper {
+	background-color: #4B8CBB;
+
+	height: 80px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.main__form-header-text {
-	font-family: "SeoulHangang-B";
-	font-weight: 400;
+.main__job-form-header-text {
+	font-family: 'SeoulHangang-B';
 	font-size: 36px;
+	font-weight: 400;
 }
 
-.main__form-inputs {
+.main__job-form-inputs-wrapper {
 	background-color: rgba(217, 217, 217, 0.31);
 
+	display: flex;
+	flex-direction: column;
+
 	padding: 50px;
-	margin-bottom: 50px;
+}
 
+input[name='fullname'],
+input[name='phone'],
+input[name='email'],
+.main__job-form-custom-inputs-group,
+.main__job-form-inputs-container {
+	margin-bottom: 50px;
+}
+
+input[name='birth-date'] { max-width: 170px; }
+
+input[name='user-city'] { max-width: 220px; }
+
+textarea { height: 270px; }
+
+.main__job-form-inputs-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main__job-form-inputs-group {
 	display: flex;
 	flex-direction: column;
-}
 
-.main__form-inputs-group {
-	display: flex;
-	justify-content: space-between;
-}
-
-.main__form-inputs-group > div {
-	width: 45%;
-	display: flex;
-	flex-direction: column;
-}
-
-.main__form-inputs input,
-.main__form-inputs textarea {
-	background-color: rgba(217, 217, 217, 1);
-
-	font-family: "SeoulHangang-CM";
-	font-weight: 400;
-	font-size: 24px;
-
-	border: none;
-
-	padding: 20px 50px;
-}
-
-.main__form-inputs textarea { padding-bottom: 50px; }
-
-.main__small-inputs-container {
-	display: flex;
-	justify-content: space-between;
-
-	flex-wrap: wrap;
-}
-
-.main__small-input {
 	width: 100%;
-	max-width: 275px;
+	max-width: 45%;
+}
 
-	background-color: rgba(217, 217, 217, 1);
-
+.main__job-form-custom-inputs-group {
 	display: flex;
-	align-items: center;
-	justify-content: end;
-}
-
-.main__custom-input-container {
-	width: 275px;
-
-	background-color: rgba(217, 217, 217, 1);
-
-	padding: 20px 0;
-	margin-bottom: 50px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-input.main__custom-input {
-	background-color: transparent;
-	padding: 20px 0;
-}
-
-.main__custom-input-text {
-	font-family: "SeoulHangang-CM";
-	font-weight: 400;
-	font-size: 24px;
-}
-
-.main__custom-input:focus { outline: none; }
-
-.main__input-image { margin-right: 10px; }
-
-input[type="date"] {
-	display: flex;
-	flex-direction: row-reverse;
-
-	position: relative;
-	right: 30px;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
-
-.main__name-input,
-.main__email-input,
-.main__phone-input,
-.main__small-input {
-	margin-bottom: 50px;
-}
-
-.main__form-button {
-	font-family: "SeoulHangang-CBL";
-	font-weight: 400;
-	font-size: 32px;
-
-	padding: 17px 95px;
-
-	background-color: rgba(75, 140, 187, 1);
-
-	border: none;
-}
-
-.main__form-buttons-group {
-	width: 100%;
-	max-width: 764px;
-
-	display: flex;
-	align-self: center;
 	justify-content: space-between;
-
-	margin-top: 50px;
 }
 
-.main__custom-select-wrapper {
-	display: flex;
-	align-items: center;
-
-	background-color: #D9D9D9;
-
-	padding: 20px 0 20px 50px;
+.main__job-form-custom-input-wrapper {
+	width: 100%;
+	max-width: 45%;
 }
 
-.main__custom-select-text {
-	font-family: "SeoulHangang-CM";
-	font-weight: 400;
-	font-size: 24px;
-}
+.main__job-form-custom-input-wrapper.main__job-form-custom-input-wrapper--select { 
+	max-width: 600px;
+	padding-left: 50px;
+	box-sizing: border-box;
 
-.main__custom-select-icon { margin-right: 12px; }
+	justify-content: start;
 
-.main__custom-select-wrapper {
 	position: relative;
 }
 
-.main__custom-select-input:checked + 
-.main__custom-select-wrapper .main__custom-select-icon 
-{ transform: rotate(180deg); }
+.main__job-form-custom-options { display: none; }
 
-.main__custom-select-options-wrapper {
+.main__job-form-custom-select:checked + div.main__job-form-custom-options { 
+	display: block;
+
 	position: absolute;
-	display: none;
-
 	left: 0;
 	right: 0;
 	top: 100%;
 
 	background-color: #D9D9D9;
-}
-
-.main__custom-select-input:checked +
-.main__custom-select-wrapper .main__custom-select-options-wrapper 
-{
 	display: flex;
 	flex-direction: column;
 }
 
-.main__custom-option-text {
-	font-family: "SeoulHangang-CM";
-	font-weight: 400;
-	font-size: 24px;
+.main__job-form-custom-select-marker.active { transform: rotate(180deg); }
+
+.main__job-form-custom-option { padding: 20px 0 20px 50px; }
+
+.main__job-form-custom-option:hover { background-color: #cccccc; }
+
+.main__job-form-buttons-group {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+
+	width: 100%;
+	max-width: 60%;
 }
 
-.main__custom-option-wrapper { padding: 20px 0 20px 50px; }
+.main__job-form-input,
+.main__job-form-custom-input-wrapper {
+	background-color: #D9D9D9;
+}
 
-.main__custom-option-wrapper:hover { background-color: #b1b1b1; }
+.main__job-form-custom-input { background-color: transparent; }
+
+.main__job-form-input,
+.main__job-form-custom-input,
+#job-form button {
+	border: none;
+}
+
+.main__job-form-input,
+.main__job-form-custom-input,
+.main__job-form-custom-input-text, 
+.main__custom-option-text,
+#job-form button {
+	font-family: 'SeoulHangang-B';
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#job-form button {
+	background-color: #4B8CBB;
+
+	height: 65px;
+	width: 100%;
+	max-width: 330px;
+
+	font-family: 'SeoulHangang-CBL';
+}
+
+.main__job-form-custom-input-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 10px;	
+}
+
+.main__job-form-input { padding: 20px 0 20px 50px; }
+
+.main__job-form-custom-input-wrapper { padding: 20px 0; }
+
+.main__job-form-input,
+.main__job-form-custom-input-wrapper {
+	position: relative;
+}
+
+.main__job-form-error-message {
+	display: none;
+
+	position: absolute;
+	bottom: 120%;
+
+	font-family: 'SeoulHangang-B';
+	font-size: 12px;
+	font-weight: 400;
+	
+	color: red
+}
+
+.main__job-form-error-message.active { display: block; }
