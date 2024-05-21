@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="../fonts.css" />
 	<link rel="stylesheet" href="../style.css" />
-	<link rel="stylesheet" href="../styles/contacts.css">
+	<link rel="stylesheet" href="../styles/about-page.css">
 
 	<link rel="shortcut icon" href="../media/min-logo.svg" />
 
-	<title>LifeOops - контакты</title>
+	<title>LifeOops - о нас</title>
 </head>
-
 <body>
 	<header>
 		<div class="header__contacts-container-background">
@@ -45,46 +43,28 @@
 				</button>
 				<input type="text" name="find" placeholder="Дизайн для текста" class="header__search-input">
 			</form>
-			<a href="#feedback-form" class="header__feedback-form-button">ВАШИ ОШИБКИ</a>
+			<a href="../index.html#feedback-form" class="header__feedback-form-button">К ВОПРОСАМ</a>
 		</div>
 	</header>
-	<main>
-		<section class="g-page-container">
-			<h2 class="main__slider-header">Забавные моменты</h2>
-			<div class="main__slider">
-				<div class="main__slides">
-					<img src="../media/slide-1.svg" alt="Slide #1" class="main__slide">
-					<img src="../media/slide-2.svg" alt="Slide #2" class="main__slide">
-					<img src="../media/slide-3.jpg" alt="Slide #3" class="main__slide">
-				</div>
-				<div class="main__slider-buttons">
-					<a href="" class="main__slider-button"><img src="../media/bug-icon.svg" alt="Иконка жука"></a>
-					<a href="" class="main__slider-button"><img src="../media/bug-icon.svg" alt="Иконка жука"></a>
-					<a href="" class="main__slider-button"><img src="../media/bug-icon.svg" alt="Иконка жука"></a>
-				</div>
-			</div>
-		</section>
-		<form action="#" method="post" class="g-page-container main__feedback-form">
-			<div class="main__form-header-wrapper">
-				<h2 class="main__form-header-text">Ваши смешные ошибки</h2>
-			</div>
-			<div class="main__form-inputs-wrapper">
-				<input type="text" name="fullname" placeholder="ФИО" required>
-				<div class="main__input-group">
-					<input type="email" name="email" placeholder="Email" required>
-					<label for="file" class="main__custom-file-wrapper">
-						<input type="file" name="image" id="file" hidden required>
-						<img src="../media/file-icon.svg" alt="Иконка файла" class="main__custom-file-icon">
-						<p class="main__custom-file-text">Фото</p>
-					</label>
-				</div>
-				<textarea name="description" cols="30" rows="10" placeholder="Описание ошибки" required></textarea>
-				<div class="main__form-buttons-wrapper">
-					<button type="submit">Отправить</button>
-					<button type="reset">Сбросить</button>
-				</div>
-			</div>
-		</form>
+	<main class="g-page-container">
+		<h1 class="main__header">Готовые проекты</h1>
+		<p class="main__text">На этой станице мы презентуем наши прошлые (почти готовые проекты)</p>
+		<ol class="main__projects-list">
+			<li class="main__projects-list-element">
+				<p class="main__projects-list-element-text">
+					Наш первый сайт в который мы вложили всё нашу любовь) https://theyearofgreta.com <br>
+					Идея дизайна для сайта пришла в мою светлую голову <br>
+					А за всё остальное отвечали мои коллеги (Олег, Эдуард и чуть-чуть Урузмаг)
+				</p>
+				<img src="../media/first-project.png" alt="Превью проекта" class="main__projects-list-element-image">
+			</li>
+			<li class="main__projects-list-element">
+				<p class="main__projects-list-element-text">
+					Наш второй сайт не приобрёл особой популярности, ну вышло как вышло
+				</p>
+				<img src="../media/second-project.png" alt="Превью проекта" class="main__projects-list-element-image">
+			</li>
+		</ol>
 	</main>
 	<footer>
 		<div class="footer__container g-page-container">
@@ -98,7 +78,5 @@
 			</nav>
 		</div>
 	</footer>
-	<script src="../scripts/contacts_slider_script.js"></script>
 </body>
-
 </html>

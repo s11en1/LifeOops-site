@@ -1,0 +1,39 @@
+.main__header {
+	font-family: 'SeoulHangang-CM';
+	font-size: 24px;
+	font-weight: 400;
+
+	background-color: #4B8CBB;
+
+	display: inline-block;
+	padding: 8px 22px;
+	margin-bottom: 50px;
+}
+
+.main__projects-list-element-text,
+.main__text,
+.main__projects-list-element {
+	font-family: 'Inter';
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.main__text { margin-bottom: 70px; }
+
+.main__projects-list {
+	border-left: 40px solid #4B8CBB;
+
+	padding-left: 40px;
+}
+
+.main__projects-list-element { 
+	list-style: decimal;
+	margin-bottom: 50px;
+}
+
+.main__projects-list-element-image {
+	width: 800px;
+	height: 375px;
+
+	margin-top: 50px;
+}
